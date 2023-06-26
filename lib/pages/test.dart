@@ -1,35 +1,18 @@
-import 'package:flutter/material.dart'; 
-import 'package:http/http.dart' as http; 
-import 'dart:convert' ;
+import 'package:flutter/material.dart';
 
+class Test extends StatefulWidget {
+  const Test({Key? key}) : super(key: key);
 
-
-class Test extends StatefulWidget{
   @override
-  _Test createState() =>  _TestState();
+  _TestState createState() => _TestState();
 }
-  
-class  _Test extends State<Test>{
-   @override
+
+class _TestState extends State<Test> {
+  @override
   Widget build(BuildContext context) {
     return Container(
-      child: scaffold(
-        appBar:AppBar(
-          title:Text('Title')
-
-        ),
-        body:container(
-
-
-        )
-
-
-      ),
-    ),
-
-
-
-
-
+      child: Scaffold(
+          appBar: AppBar(title: const Text('Title')), body: Container()),
+    );
   }
 }
